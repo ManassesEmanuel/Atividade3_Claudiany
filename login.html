@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR" style="--on: 0;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <style type="text/css" id="operaUserStyle"></style>
+
+</head>
+<body>
+    <div class="container">
+    <div class="lamp-wrapper">
+        <svg class="lamp-svg" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" style="touch-action: pan-x;">
+            <ellipse class="inner-glow" cx="100" cy="110" rx="60" ry="30"></ellipse>
+            
+            <rect class="lamp-base" x="92" y="100" width="16" height="160" rx="8"></rect>
+            
+            <rect class="lamp-base" x="60" y="250" width="80" height="12" rx="6"></rect>
+
+            <g class="pull-cord">
+                <line class="cord-line" x1="130" y1="110" x2="130" y2="180"></line>
+                <circle class="cord-bead" cx="130" cy="190" r="6" data-svg-origin="124 184" transform="matrix(1,0,0,1,0,0)" style="translate: none; rotate: none; scale: none; transform-origin: 0px 0px;"></circle>
+                <circle class="cord-hit" cx="130" cy="190" r="25" fill="transparent" data-svg-origin="105 165" transform="matrix(1,0,0,1,0,0)" style="translate: none; rotate: none; scale: none; transform-origin: 0px 0px; touch-action: pan-x; cursor: grab; user-select: none; z-index: 1001;"></circle>
+            </g>
+
+            <!-- Mushroom Shade -->
+            <path class="lamp-shade" d="M30 110 C 30 50, 170 50, 170 110 C 170 125, 30 125, 30 110 Z"></path>
+        </svg>
+    </div>
+
+    <div class="login-form">
+        <h2>Entrar na sua conta</h2>
+        <form onsubmit="return false;">
+            <div class="form-group">
+                <label>Email ou Usuário</label>
+                <input type="text" placeholder="Seu e-mail ou usuário">
+            </div>
+            <div class="form-group">
+                <label>Senha</label>
+                <input type="password" placeholder="Digite sua senha">
+            </div>
+            <div class="esqueceu-senha">
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+            <button class="login-btn">Entrar</button>
+            <div class="Register-link">
+                <p>Não tem conta ? <a href="/HTML/Register.html">Registrar</a></p>
+            </div>
+        </form>
+    </div>
+    
+    <div class="lamp-instruction">
+        Acenda a luminária.
+    </div>
+
+</div>
+    
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+    <script src="./javascript/script.js"></script>
+</body>
